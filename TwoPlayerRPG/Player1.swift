@@ -9,7 +9,23 @@
 import Foundation
 
 class Player1: Player {
-   let attackPwr = 10
     
+    private var _name = "Player 1"
     
-}
+    var name : String {
+        get {
+            return _name
+        }
+    }
+
+    convenience init (name: String, hp: Int, attackpwr: Int) {
+    self.init(startingHP: hp, attackPwr: attackpwr)
+    _name = name
+    
+        //Here it is -> the HP is passed into the next class as the initalizer
+        
+        
+    }
+
+    
+  }

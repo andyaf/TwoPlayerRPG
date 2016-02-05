@@ -29,6 +29,9 @@ class Player {
         self._attkPwr = attackPwr
     }
  
-    
+    func attemptAttack(attackPwr:Int) -> Bool {
+        self._hp -= attackPwr
+        return true
+    }
     
 }

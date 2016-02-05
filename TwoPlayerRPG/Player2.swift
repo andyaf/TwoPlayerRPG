@@ -9,6 +9,20 @@
 import Foundation
 
 class Player2: Player {
-    let attackpwr = 15
+    private var _name = "Player 2"
+    
+    var name: String {
+        get {
+            return _name
+        }
+    }
+    
+    convenience init (name: String, hp: Int, attackPwr: Int) {
+        self.init (startingHP : hp, attackPwr: attackPwr)
+        _name = name
+    }
+    
+    
+    
     
 }

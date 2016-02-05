@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="601" height="65"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="AUR-XR-bej">
-                                                <rect key="frame" x="0.0" y="0.0" width="284" height="65"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="317" height="65"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="292" id="65Q-As-huX"/>
                                                     <constraint firstAttribute="width" constant="378" id="7Vi-2b-K9z"/>
@@ -47,7 +47,7 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="j14-yV-GHK">
-                                                <rect key="frame" x="284" y="0.0" width="317" height="65"/>
+                                                <rect key="frame" x="317" y="0.0" width="284" height="65"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="9um-65-WQ9"/>
                                                     <constraint firstAttribute="width" constant="317" id="C8b-wj-f6T"/>
@@ -58,10 +58,10 @@
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="PaA-sl-Zxn"/>
-                                                        <exclude reference="Nbc-dD-ooP"/>
-                                                        <exclude reference="WcN-R6-Cbd"/>
                                                         <exclude reference="GgA-8R-7Dv"/>
+                                                        <exclude reference="Nbc-dD-ooP"/>
+                                                        <exclude reference="PaA-sl-Zxn"/>
+                                                        <exclude reference="WcN-R6-Cbd"/>
                                                     </mask>
                                                 </variation>
                                             </imageView>
@@ -109,6 +109,9 @@
                                     <constraint firstAttribute="height" constant="49" id="kIs-Wr-Z1f"/>
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
+                                <connections>
+                                    <action selector="Player2Attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C0O-GB-ha4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7r-Go-dYD">
                                 <rect key="frame" x="54" y="288" width="135" height="49"/>
@@ -117,6 +120,9 @@
                                     <constraint firstAttribute="width" constant="135" id="e7c-y6-Qpq"/>
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="Player1Attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxL-Va-BJA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgW-kp-TUT">
                                 <rect key="frame" x="461" y="302" width="74" height="21"/>
@@ -193,6 +199,12 @@
                             <constraint firstItem="BJ7-VW-c0q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xWO-ez-MaV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Player1HPLabel" destination="lnk-mh-H1U" id="OxF-oo-DQy"/>
+                        <outlet property="Player2Attack" destination="5s2-DP-7Nh" id="du7-sG-YXw"/>
+                        <outlet property="Player2HPLabel" destination="09l-CW-s8i" id="mMZ-4g-m91"/>
+                        <outlet property="bottomTextLabel" destination="RKJ-eW-fmQ" id="whb-fy-uJb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
