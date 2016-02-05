@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="601" height="65"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="AUR-XR-bej">
-                                                <rect key="frame" x="0.0" y="0.0" width="317" height="65"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="284" height="65"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="292" id="65Q-As-huX"/>
                                                     <constraint firstAttribute="width" constant="378" id="7Vi-2b-K9z"/>
@@ -47,7 +47,7 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="j14-yV-GHK">
-                                                <rect key="frame" x="317" y="0.0" width="284" height="65"/>
+                                                <rect key="frame" x="284" y="0.0" width="317" height="65"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="9um-65-WQ9"/>
                                                     <constraint firstAttribute="width" constant="317" id="C8b-wj-f6T"/>

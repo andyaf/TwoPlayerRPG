@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        firstPlayer = Player1(name: "Bad Guy", hp: 100, attackpwr: 10)
+        
+        secondPlayer = Player2(name: "Good Guy", hp: 100, attackPwr: 20)
+        
+        
+        
+    }
 
     @IBOutlet weak var bottomTextLabel: UILabel!
     
@@ -31,24 +42,25 @@ class ViewController: UIViewController {
     
     
     @IBAction func Player2Attack(sender: AnyObject) {
+        
+        if firstPlayer.attemptAttack(secondPlayer.attkPwr) {
+            Player1HPLabel.text = "\(firstPlayer.hp) HP"
+        } else {
+            Player1HPLabel.text = "Attack was unsucessful"
+        }
+        
+        
     }
     
     var firstPlayer : Player1
     var secondPlayer : Player2
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        firstPlayer = Player1(name: "Bad Guy", hp: 100, attackpwr: 10)
-        
-        secondPlayer = Player2(name: "Good Guy", hp: 100, attackPwr: 20)
-        
-       
+    
+
+    func createSecondPlayer () {
         
     }
-
-    
     
    
     

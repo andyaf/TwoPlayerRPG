@@ -9,6 +9,7 @@
 import Foundation
 
 class Player2: Player {
+    
     private var _name = "Player 2"
     
     var name: String {
