@@ -69,13 +69,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-b6-8B4">
-                                <rect key="frame" x="-31" y="368" width="315" height="168"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="168" id="Bay-bE-lcK"/>
-                                    <constraint firstAttribute="width" constant="315" id="HGC-8a-Mfl"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="Lwh-84-nDx">
                                 <rect key="frame" x="317" y="368" width="315" height="168"/>
                                 <constraints>
@@ -141,7 +134,7 @@
                                     <constraint firstAttribute="width" constant="74" id="hbY-PZ-n84"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83z-22-T6d">
@@ -163,9 +156,16 @@
                                     <constraint firstAttribute="height" constant="21" id="N0A-OM-CVR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-b6-8B4">
+                                <rect key="frame" x="-31" y="368" width="315" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="Bay-bE-lcK"/>
+                                    <constraint firstAttribute="width" constant="315" id="HGC-8a-Mfl"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -201,8 +201,9 @@
                     </view>
                     <connections>
                         <outlet property="Player1HPLabel" destination="lnk-mh-H1U" id="OxF-oo-DQy"/>
-                        <outlet property="Player2Attack" destination="5s2-DP-7Nh" id="du7-sG-YXw"/>
+                        <outlet property="Player1Image" destination="NLf-b6-8B4" id="gnf-qZ-9mY"/>
                         <outlet property="Player2HPLabel" destination="09l-CW-s8i" id="mMZ-4g-m91"/>
+                        <outlet property="Player2Image" destination="Lwh-84-nDx" id="gas-cj-rhu"/>
                         <outlet property="bottomTextLabel" destination="RKJ-eW-fmQ" id="whb-fy-uJb"/>
                     </connections>
                 </viewController>

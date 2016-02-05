@@ -23,6 +23,16 @@ class Player {
             return _attkPwr
         }
     }
+    
+    var isAlive : Bool {
+        get {
+            if hp <= 0 {
+                return false
+            } else {
+                return true
+            }
+        }
+    }
 
     init(startingHP:Int, attackPwr: Int) {
         self._hp = startingHP

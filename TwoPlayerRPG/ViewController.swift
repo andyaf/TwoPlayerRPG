@@ -15,12 +15,20 @@ class ViewController: UIViewController {
         
         firstPlayer = Player1(name: "Bad Guy", hp: 100, attackpwr: 10)
         
+        Player1HPLabel.text = "\(firstPlayer.hp) HP"
+        
         secondPlayer = Player2(name: "Good Guy", hp: 100, attackPwr: 20)
+        
+        Player2HPLabel.text = "\(secondPlayer.hp) HP"
         
         
         
     }
 
+    @IBOutlet weak var Player1Image: UIImageView!
+    
+    @IBOutlet weak var Player2Image: UIImageView!
+    
     @IBOutlet weak var bottomTextLabel: UILabel!
     
     @IBOutlet weak var Player1HPLabel: UILabel!
@@ -36,7 +44,12 @@ class ViewController: UIViewController {
             Player2HPLabel.text = "Attack was unsucessful"
         }
         
-        
+        if !secondPlayer.isAlive {
+            bottomTextLabel.text = "Player 2 is Dead!"
+            Player2Image.hidden = true
+        } else {
+            
+        }
         
     }
     
@@ -49,20 +62,24 @@ class ViewController: UIViewController {
             Player1HPLabel.text = "Attack was unsucessful"
         }
         
+        if !firstPlayer.isAlive {
+            bottomTextLabel.text = "Player 1 is Dead!"
+            Player1Image.hidden = true
+            
+        } else {
+            
+        }
+        
         
     }
     
-    var firstPlayer : Player1
-    var secondPlayer : Player2
+    var firstPlayer : Player1!
+    var secondPlayer : Player2!
+    
+    
     
     
     
 
-    func createSecondPlayer () {
-        
-    }
-    
-   
-    
 }
 
