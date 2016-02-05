@@ -12,6 +12,9 @@
 		4E478D3B1C63DBF500589398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E478D391C63DBF500589398 /* Main.storyboard */; };
 		4E478D3D1C63DBF500589398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E478D3C1C63DBF500589398 /* Assets.xcassets */; };
 		4E478D401C63DBF500589398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E478D3E1C63DBF500589398 /* LaunchScreen.storyboard */; };
+		4E8A73C11C640B98003461DA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A73C01C640B98003461DA /* Player.swift */; };
+		4E8A73C51C640DBC003461DA /* Player1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A73C41C640DBC003461DA /* Player1.swift */; };
+		4E8A73C91C640DE0003461DA /* Player2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A73C81C640DE0003461DA /* Player2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4E478D3C1C63DBF500589398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E478D3F1C63DBF500589398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E478D411C63DBF500589398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E8A73C01C640B98003461DA /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4E8A73C41C640DBC003461DA /* Player1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player1.swift; sourceTree = "<group>"; };
+		4E8A73C81C640DE0003461DA /* Player2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				4E478D3C1C63DBF500589398 /* Assets.xcassets */,
 				4E478D3E1C63DBF500589398 /* LaunchScreen.storyboard */,
 				4E478D411C63DBF500589398 /* Info.plist */,
+				4E8A73C01C640B98003461DA /* Player.swift */,
+				4E8A73C41C640DBC003461DA /* Player1.swift */,
+				4E8A73C81C640DE0003461DA /* Player2.swift */,
 			);
 			path = TwoPlayerRPG;
 			sourceTree = "<group>";
@@ -136,6 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E478D381C63DBF500589398 /* ViewController.swift in Sources */,
+				4E8A73C91C640DE0003461DA /* Player2.swift in Sources */,
+				4E8A73C51C640DBC003461DA /* Player1.swift in Sources */,
+				4E8A73C11C640B98003461DA /* Player.swift in Sources */,
 				4E478D361C63DBF500589398 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +298,7 @@
 				4E478D461C63DBF500589398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
